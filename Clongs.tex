@@ -1,0 +1,35 @@
+\documentclass[titlepage]{scrreprt}
+	
+\usepackage{fontspec}
+
+\setromanfont{Gentium Plus}[AutoFakeBold]
+\setsansfont{Gentium Plus}[AutoFakeBold]
+
+\usepackage{microtype, csquotes, booktabs, longtable, epigraph, amsmath, amssymb, xspace, xcolor, url, imakeidx}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\makeindex
+
+\newcommand{\clong}[1]{{\color{blue!50!black}\itshape#1}}
+\newcommand{\derive}[2]{\eld{\textsurd{}\textsc{#1}#2}}
+\newcommand{\proto}{$\star$}
+\newcommand{\asp}{ʰ}
+\newcommand{\vel}{ʷ}
+\newcommand{\pal}{ʲ}
+
+\begin{document}
+	\title{Tiskauric Languages}
+	\subtitle{\textellipsis}
+	\date{\today}
+	\author{Jakob Teuber}
+	\maketitle
+	\tableofcontents\newpage
+	\listoftables\newpage
+	
+	\include{intro}
+	\include{protolang}
+	\include{tiskaur}
+	\include{teora}
+	
+	\printindex
+\end{document}
